@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Automator</title>
+</head>
+<body>
+    <h1>Task Automator</h1>
+    <form action="/submit" method="post">
+        <label for="sender_email">Your Email Address:</label><br>
+        <input type="email" id="sender_email" name="sender_email" required><br>
+
+        <label for="sender_password">Your Email Password:</label><br>
+        <input type="password" id="sender_password" name="sender_password" required><br>
+
+        <label for="recipient_email">Recipient's Email Address:</label><br>
+        <input type="email" id="recipient_email" name="recipient_email" required><br>
+
+        <label for="subject">Email Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br>
+
+        <label for="message">Email Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+        <label for="pdf_path">Path to PDF file:</label><br>
+        <input type="text" id="pdf_path" name="pdf_path" required><br>
+
+        <label for="excel_path">Path to Excel file:</label><br>
+        <input type="text" id="excel_path" name="excel_path" required><br>
+
+        <label for="image_path">Path to Image file:</label><br>
+        <input type="text" id="image_path" name="image_path" required><br>
+
+        <label for="output_format">Output Image Format:</label><br>
+        <input type="text" id="output_format" name="output_format" required><br>
+
+        <label for="directory">Path to Directory:</label><br>
+        <input type="text" id="directory" name="directory" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
